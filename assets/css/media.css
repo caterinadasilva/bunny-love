@@ -1,10 +1,45 @@
 @media screen and (max-width: 767px) {
-	.mobile {
-		display: block;
+	menu {
+		padding: 1em 0;
 	}
-	.hidden-mobile {
-		height: 0;
-		padding: 0;
+	.mobile-left {
+	    overflow: hidden;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	#menu-btn.mobile {
+		display: block;
+		margin-right: 1em;
+	}
+	.menu-btn {
+		width: 40px;
+		height: 5px;
+		border-radius: 5px;
+		background-color: #fff;
+		margin: 1em 0;
+		position: relative;
+	}
+	.menu-btn:before {
+		content: '';
+		width: 40px;
+		height: 5px;
+		border-radius: 5px;
+		background-color: #fff;
+		position: absolute;
+		top: -.75em;
+	}
+	.menu-btn:after {
+		content: '';
+		width: 40px;
+		height: 5px;
+		border-radius: 5px;
+		background-color: #fff;
+		position: absolute;
+		bottom: -.75em;
+	}
+	#menu.hidden-mobile {
+		display: none;
 		transition: .5s ease all;
 	}
 	#logo h1 {
@@ -13,8 +48,33 @@
 	nav#menu {
 		float: left;
 		padding: 0;
+	    width: 100%;
+	}
+	nav ul {
+	   margin: 0 auto;
 	}
 	nav ul li {
 		display: block;
+	    padding: 1em .5em;
+	    text-align: center;
+	}
+	header .content {
+		padding: 1em;
+	}
+	h1 {
+	    font-size: 5rem;
+	    line-height: 70%;
+	}
+	h3 {
+	    font-size: 1.5rem;
+	}
+	#tales .tale .image-box {
+	    height: initial;
+	}
+
+}
+@media screen and (min-width: 768px) {
+	.mobile {
+		display: none !important;
 	}
 }

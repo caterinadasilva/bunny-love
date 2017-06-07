@@ -3,6 +3,6 @@
 	var list = document.getElementById('menu');
 	btnMenu.addEventListener("click", function(event){
 		event.preventDefault();
-		list.classList.toggle('hidden-mobile');
+		list.classList.toggle('hide-on-mobile');
 	})	
 })();
