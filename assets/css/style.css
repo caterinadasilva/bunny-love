@@ -170,8 +170,8 @@ font-size: .8rem;
 footer {
 display: block;
 width: 100%;
-margin: 5em 0 0;
-padding: 0 0 2em;
+text-align: center;
+color: #fff;
 overflow: hidden;
 }
 /*INPUT CHECK*/
@@ -252,6 +252,7 @@ overflow: hidden;
 height: 150px;
 }
 #tales .tale .text {
+border-bottom: 5px solid #F03861;
 padding: 1em;
 min-height: 250px;
 text-align: center;
@@ -310,3 +311,15 @@ margin-bottom: 1em;
 }
 
 /* FOOTER */
+footer .top {
+    height: 100px;
+    background-image: url('../img/bunny-head.png');
+    background-size: contain;
+    background-repeat-y: no-repeat;
+    margin: 1em 0 0;
+}
+footer .bot {
+	background-color: #7386D5;
+    padding: 1em 0;
+    border-top: 5px solid #F03861;
+}
