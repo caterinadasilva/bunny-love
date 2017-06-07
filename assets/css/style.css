@@ -21,6 +21,7 @@ border: 0;
 font-size: 100%;
 font: inherit;
 vertical-align: baseline;
+box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -57,29 +58,40 @@ margin: 0 auto;
 }
 menu {
 background-color: #7386D5;
-color: white;
-padding: 5em 0 2em;
-margin-bottom: 5em;
+padding: 2em 1em;
 }
 h1, h2, h3, h4, h5, h6 {
 font-family: 'Baloo Bhai', Helvetica, Arial, sans-serif;
 }
+h1, h2,  h3 {
+color: #F03861;
+}
 h1 {
-font-size: 3rem;
+font-size: 7rem;
 }
 h2 {
-font-size: 2.5rem;
+font-size: 5rem;
 }
 h3 {
-font-size: 1.5rem;
+font-size: 3rem;
 }
 h4 {
-font-size: 1.5rem;
+font-size: 2rem;
 }
 .lead {
 max-width: 660px;
 margin: 2em auto 1em;
 font-size: 120%;
+color: #fff;
+font-style: italic;
+text-align: center;
+}
+.lead span {
+text-transform: none;
+color: #fff;
+font-weight: lighter;
+letter-spacing: 2px;
+padding: 0 1em;
 }
 form {
 width: 90%;
@@ -136,8 +148,8 @@ line-height: 1.4;
 text-align: justify;
 }
 span {
-border-bottom: 2px #7386D5 solid;
-font-weight: 700;
+color: #F03861;
+text-transform: uppercase;
 }
 b {
 font-weight: 800;
@@ -171,3 +183,39 @@ margin: 0;
 }
 
 /* Especial */
+
+/* MENU */
+#logo {
+	float: left;
+}
+#logo h1{
+	color: #fff;
+	font-size: 3rem;
+}
+nav {
+    padding: .8em;
+}
+nav a {
+	padding: .5em;
+	color: #CED9FC;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-decoration: none;
+}
+nav ul li {
+	display: inline-block;
+}
+
+/* HEADER */
+header {
+	background-image: url('../img/img-5.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+header .content {
+	margin: 5em 0;
+	padding: 5em;
+	background-color: rgba(115, 134, 213, .75);
+	text-align: center;
+}
