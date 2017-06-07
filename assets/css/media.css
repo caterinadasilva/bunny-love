@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+	.mobile {
+		display: block;
+	}
+	.hidden-mobile {
+		height: 0;
+		padding: 0;
+		transition: .5s ease all;
+	}
+	#logo h1 {
+		font-size: 2rem;
+	}
+	nav#menu {
+		float: left;
+		padding: 0;
+	}
+	nav ul li {
+		display: block;
+	}
+}
